@@ -1,0 +1,40 @@
+\usepackage{siunitx}    % Enable SI units
+\usepackage[norsk,main=norsk]{babel} % Setter norsk som språk.
+%\usepackage[british]{babel} % Defining UK English as language. 
+
+\usepackage[hidelinks]{hyperref} % Hyperreferanser \href{} med mer. 'hidelinks' gjør at ikke hyperreferanser til nettsider, kapitler og så videre ikke markeres med farge i dokumentet
+
+\usepackage{subcaption} % subfigure and subtable
+
+\usepackage[labelfont=bf,textfont={md,doublespacing}]{caption}
+
+\KOMAoptions{twoside=false} % To avoid blank page before new chapter
+
+\usepackage{setspace} % singlespacing, onehalfspacing, and doublespacing
+
+\usepackage{newtxtext,newtxmath} % Times New Roman
+
+\usepackage{natbib} % For handling references
+
+
+\usepackage{import}     % Enable importing of sections
+
+\usepackage{graphicx} % For includegraphics{} for å importere bilder
+
+\usepackage{float}      % Force image location using "H"
+
+\usepackage{longtable} % Tabell som strekker seg over flere sider. Se eksempel i appendikset
+
+\usepackage[a4paper, left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm,footskip=1cm]{geometry} % Setter marginer og papirstørrelse
+
+% Definerer hvordan avsnitt i teksten ser ut
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.8em}
+
+% Customized header and footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0}
+\renewcommand{\footrulewidth}{0}
+\fancyfoot[C]{\thepage}
